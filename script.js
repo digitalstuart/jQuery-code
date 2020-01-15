@@ -1,5 +1,4 @@
-$(document).ready(function() {
- 
+$(document).ready(function() { 
 
  	$("#stream1_btn").on("click", function() {
  		$(".stream1").removeClass('highlight_stream');
@@ -82,14 +81,14 @@ $(document).ready(function() {
         $("#hr_django").css('font-size', '1em');
         $("#hr_css").css('font-size', '2em');
         $("#hr_html").css('font-size', '1em');
-    });   
+    });    
 
-    $(".bottom_button").mouseenter(function(){
-        $("body").css("background-color", "black");
-    });
+    $("#html_btn").mouseenter(function() {
+         $("#html_btn").fadeTo('fast',0.5);         
+      });  
 
-    $(".bottom_button").mouseleave(function(){
-        $("body").css( "background-color", "#eee"); 
-    });
+      $("#html_btn").mouseleave(function() {
+         $("#html_btn").fadeTo('fast',1);         
+      });  
 
 }); 
